@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Tab Section */
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    background: #f1f1f1;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.tab {
+    flex: 1;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab.current-tab {
+    background-color: #0091ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.hidden {
+    display: none !important;
+}
+
+/* Grant Access & Search */
+.grant-location-container, .form-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grant-location-container.active, .form-container.active {
+    display: flex;
+}
+
+.grant-location-container img {
+    width: 60px;
+    height: 60px;
+}
+
+.btn {
+    background: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/*  Search Form */
+.form-container {
+    display: flex;
+    gap: 8px;
+}
+
+.form-container input {
+    width: 70%;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-container button {
+    background: #007bff;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button img {
+    width: 18px;
+    height: 18px;
+}
+
+/*  Loading */
+.loading-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-container.active {
+    display: flex;
+}
+
+/*  Weather Info */
+.user-info-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+.user-info-container.active {
+    display: flex;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.name img {
+    width: 24px;
+    height: 16px;
+}
+
+/*  Weather Icon & Temp */
+[data-weatherIcon] {
+    width: 60px;
+    height: 60px;
+}
+
+[data-temp] {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*  Weather Parameters - Cards */
+.parameter-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.parameter {
+    background: #f1f1f1;
+    padding: 6px;
+    border-radius: 6px;
+    text-align: center;
+    width: 80px;
+    font-size: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.parameter img {
+    width: 30px; 
+    height: 30px;
+    margin-bottom: 5px; 
+}
+
+/*  Wind Image */
+.parameter img[src*="wind"] {
+    width: 38px;
+    height: 38px;
+}
+
+/*  Humidity Image */
+.parameter img[src*="humidity"] {
+    width: 38px;
+    height: 38px;
+}
+
+/*  Cloud Image */
+.parameter img[src*="cloud"] {
+    width: 38px;
+    height: 38px;
+}
+
+.parameter p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*  adjust the weather icons */
+.weather-icons-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px; 
+}
+
+.weather-icons-container img {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.weather-icons-container p {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
