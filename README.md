@@ -31,17 +31,8 @@ It fetches real-time weather data using the **OpenWeatherMap API** and allows us
 
 ---
 
-## 📸 Screenshots
-### Home (Grant Location Access)
-![Grant Location](./Assets/Grant-location-img.png)
-
-### Loading State
-![Loading](./Assets/loading.gif)
-
----
-
 ## ⚙️ Setup Instructions
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/sohailkhan2/weather-app.git
